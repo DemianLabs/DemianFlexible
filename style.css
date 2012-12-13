@@ -1,0 +1,431 @@
+/*
+Theme Name: Demian flexible
+Theme URI: http://demianlabs.com/lab/
+Description: Thefirst version of the flexible and responsibe, mobile first theme for "the lab". The Demian Labs blog
+Author: DemianLabs.com
+Author URI:http://demianlabs.com/
+Version: 1.0
+License: All copyrights Demian Labs
+Tags: white
+*/
+
+@IMPORT url("./css/html5boilerplate40.css");
+@IMPORT url("./css/normalize101.min.css");
+
+@font-face {
+	font-family: "Androgyne";
+	src: url(fonts/Androgyne_TB.otf) format("truetype");
+}
+
+
+/* ===== Basic Styles ===== */
+
+body {
+    font: 16px/26px "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6	{font-family: Arial, Verdana, sans-serif;}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* Responsive friendly images */
+img, object, embed {
+    max-width: 100%; height: auto;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 1px solid #fff;
+	box-shadow: 0 0 40px 5px #888;
+}
+
+.footer-container {
+    border-top: 1px solid #fff;
+    box-shadow: 0 0 40px 5px #888;
+}
+
+.header-container,
+.footer-container {
+    background: #000;
+}
+
+a#logo {
+	display: block;
+	font-size: 2em;
+	color: #fff;
+	font-family: 'Androgyne', 'Open Sans',Arial,Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#moto {
+	font-size: 0.8em;
+}
+
+#moto,
+#moto a {
+	color: #fff;
+}
+
+hr.light	{border: 0; color: #ddd; background-color: #ddd; height: 1px;}
+
+/* ===== Base styles ===== */
+
+#logozone {
+	margin: 15px 0 12px 0;
+	float: left;
+}
+
+nav {
+	float: right;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+nav a {
+    display: block;
+    margin: 2px 0 12px 0;
+    padding: 8px 0 5px 10px;
+    text-align: left;
+    text-decoration: none;
+    color: white !important;
+    background: #091D30;
+    border-radius: 5px;
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:active {
+    background: #066399;
+    color: #F6FF00;
+}
+
+.post {
+    margin: 30px 0 80px 0;
+    clear: both;
+}
+
+.post a,
+.post a:visited {
+    color: blue;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.post h2 a {
+    font-size: 1.2em;
+    color: #000 !important; 
+    font-family: 'Open Sans',Arial,Helvetica, sans-serif; 
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1.2em;
+}
+
+p.postmetadata {
+    margin: 10px 0 0px 0;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+p.postmetadata a,
+p.postmetadata a:visited {
+    color: blue;
+}
+
+.navigation {
+    margin: -30px auto 50px auto;
+}
+
+.navigation a,
+.navigation a:visited {
+    color: black;
+    width: 49%;
+    display: block;
+    font-size: 0.8em;
+    text-decoration: none;
+    
+    padding: 5px 12px;
+    box-sizing: border-box;
+}
+
+.navigation a:first-child {
+    float: left;
+    text-align: left;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #fff;
+
+background: #eeeeee;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #eeeeee 1%, #ffffff 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(1%,#eeeeee), color-stop(100%,#ffffff));
+background: -webkit-linear-gradient(left,  #eeeeee 1%,#ffffff 100%);
+background: -o-linear-gradient(left,  #eeeeee 1%,#ffffff 100%);
+background: -ms-linear-gradient(left,  #eeeeee 1%,#ffffff 100%);
+background: linear-gradient(to right,  #eeeeee 1%,#ffffff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 );
+
+
+}
+
+.navigation a:last-child {
+    float: right;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+
+    background: #ffffff;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(left,  #ffffff 0%, #eeeeee 99%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(99%,#eeeeee));
+background: -webkit-linear-gradient(left,  #ffffff 0%,#eeeeee 99%);
+background: -o-linear-gradient(left,  #ffffff 0%,#eeeeee 99%);
+background: -ms-linear-gradient(left,  #ffffff 0%,#eeeeee 99%);
+background: linear-gradient(to right,  #ffffff 0%,#eeeeee 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
+
+}
+
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container footer a {
+	color: #fff;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+	nav {
+		
+	}
+
+    nav a {
+        float: left;
+        margin: 0 10px 15px 0px;
+        padding: 10px 10px;
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
+    }
+
+    p.postmetadata {
+        font-size: 1em;
+    }
+
+    .navigation a,
+    .navigation a:visited {
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    nav {/*
+        float: right;
+        width: 70%;
+    */}
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        /*width: 57%;*/
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    nav {
+        float: right;
+        width: 70%;
+    }
+
+    nav a {
+        float: right;
+        background: #000;
+        color: #000;
+        font-weight: normal;
+        margin: 15px 0 0 10px;
+    }
+
+    .post h2 a {
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+
+    .wrapper {
+        max-width: 960px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
